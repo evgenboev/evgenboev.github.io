@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            body {
+                
+                margin: 0;
+                padding: 0;
+            }
+
+            .about {
+                width: 100vw;
+                height: 100vh;
+                background: #1F3939;
+                color: white;
+                text-align: center;
+                padding: 5vw;
+                box-sizing: border-box;
+                font: 300 3vw/1 'Helvetica', Arial;
+            }
+            
+            .mountains_layer1::after {
+                content: '';
+                width: 200vw;
+                height: 45vh;
+                background: #1F3939;
+                display: block;
+                position: absolute;
+                bottom: -50vh;
+                left: 0;
+            }
+
+            #mountains {
+               
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+                background-color: #E8E3DA;
+                overflow: hidden;
+            }
+                .mountains_layer1,
+                .mountains_layer2,
+                .mountains_layer3,
+                .mountains_layer4,
+                .mountains_layer5 {
+                    
+                    position: absolute;
+                    width: 200vw;
+                    height: 100vh;
+                    top: 0;
+                    left: -50vw;
+                    background: url('./images/layer_1.png') no-repeat bottom;
+                    background-size: 50vw auto;                    
+                }
+
+                .mountains_layer1 {
+                    
+                    position: absolute;
+                    width: 200vw;
+                    height: 95vh;
+                    top: 0;
+                    left: -50vw;
+                    background: url('./images/layer_1.png') no-repeat bottom;
+                    background-size: 60vw auto;                    
+                }
+
+                .mountains_layer3 {
+                    
+                    position: absolute;
+                    width: 200vw;
+                    height: 100vh;
+                    top: 0;
+                    left: -50vw;
+                    background: url('./images/layer_1.png') no-repeat bottom;
+                    background-size: 40vw auto;                    
+                }
+
+                .mountains_layer4 {
+                    
+                    position: absolute;
+                    width: 200vw;
+                    height: 60vh;
+                    top: 0;
+                    left: -50vw;
+                    background: url('./images/layer_1.png') no-repeat bottom;
+                    background-size: 50vw auto;                    
+                }
+
+                .mountains_layer5 { 
+                    position: absolute;
+                    width: 200vw;
+                    height: 100vh;
+                    top: 0;
+                    left: -50vw;
+                    background: url('./images/layer_1.png') no-repeat bottom;
+                    background-size: 140vw auto;    
+                } /* Добавил что бы растянуть на весь экран */
+
+                .mountains_title {
+                    
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                .mountains_layer2 {
+                    background-image: url('./images/layer_2.png');
+                }
+                .mountains_layer3 {
+                    background-image: url('./images/layer_3.png');
+                }
+                .mountains_layer4 {
+                    background-image: url('./images/layer_4.png');
+                }
+                .mountains_layer5 {
+                    
+                    background-image: url('./images/layer_5.png');
+                }
+
+                .title {
+                    margin-top: -40vh;
+                }
+                .title img {
+                    width: 25vw;
+                }
+
+                .title h1 {
+                    font: italic 3vw/1 Georgia;
+                }
+        </style>
+        <title>parallax</title>
+    </head>
+    <body>
+        <div id="mountains">
+            <div class="mountains_layer5"></div>
+            <div class="mountains_layer4"></div>
+            <div class="mountains_layer3"></div>
+            <div class="mountains_title">
+                
+            </div>
+            <div class="mountains_layer2"></div>
+            <div class="mountains_layer1"></div>
+        </div>
+        <div class="about">
+            Learn parallax with Evgen Boev...
+        </div>
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>
