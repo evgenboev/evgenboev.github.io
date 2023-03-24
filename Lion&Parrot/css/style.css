@@ -248,4 +248,10 @@ body {
   transform: rotate(360deg);
 }
 
-
+.radio {
+  height: 300px;
+  width: 300px;
+  padding-left: 30px;
+  
+  display: inline-block;
+}
