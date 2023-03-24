@@ -46,6 +46,19 @@ body {
     font-size: 14px;
 }
 
+
+.card:hover {
+    box-shadow: 0 5px 10px #3f148f;
+    transition: .5s
+}
+
+.card-photo:hover {
+    box-shadow: 0 5px 10px #d7da28;
+    transition: .5s
+  }
+
+
+/*
 .card:hover {
     animation: pulsate 1s ease-in-out;
   }
@@ -69,3 +82,4 @@ body {
         0 0 50px #84d31c96;
     }
   }
+*/
