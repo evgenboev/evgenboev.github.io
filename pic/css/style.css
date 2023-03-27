@@ -1,6 +1,7 @@
-.body {
-    margin-top: 100px;
-    padding-bottom: 100px;
+body {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: linear-gradient(270deg, #651ea79a 0%, #97152b9a 100%); 
 }
 
 .power__pic {
